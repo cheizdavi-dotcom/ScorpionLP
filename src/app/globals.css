@@ -119,4 +119,23 @@
           0 0 30px rgba(255, 0, 0, 0.5), /* O brilho ao redor expande */
           inset 0 -3px 10px rgba(0, 0, 0, 0.2); /* Volume se mantém */
   }
+
+  .btn-contact {
+    background: linear-gradient(90deg, #FF0000, #FF4D4D);
+    border-radius: 999px;
+    padding: 10px 24px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; /* bold */
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+
+  .btn-contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.6);
+  }
 }
