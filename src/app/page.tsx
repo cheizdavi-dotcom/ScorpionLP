@@ -7,7 +7,7 @@ export default function Home() {
       <Header />
       <main className="relative z-10 flex min-h-screen flex-col items-center justify-center overflow-hidden p-8 text-center">
         <div className="flex animate-in fade-in-0 slide-in-from-bottom-10 duration-1000 ease-out flex-col items-center justify-center space-y-10">
-          <div className="rounded-full border border-primary bg-transparent px-4 py-2 text-xs font-bold uppercase tracking-[2px] text-foreground">
+          <div className="rounded-full border border-primary bg-transparent px-4 py-2 text-xs font-black uppercase tracking-[2px] text-foreground">
             BEM-VINDO A SCORPIONLP
           </div>
 
