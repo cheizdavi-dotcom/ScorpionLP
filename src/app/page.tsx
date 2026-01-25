@@ -31,7 +31,6 @@ export default function Home() {
       {/* Background com partículas */}
       <div className="absolute inset-0 z-0 h-full w-full">
         <ParticlesBackground />
-        <div className="absolute inset-0 bg-black/80" />
       </div>
     </div>
   );
