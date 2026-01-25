@@ -138,4 +138,13 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 0, 0, 0.6);
   }
+
+  .feature-card {
+    @apply relative border border-transparent rounded-lg p-8 transition-all duration-300 ease-in-out;
+  }
+
+  .feature-card:hover {
+    @apply border-primary/50;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.2);
+  }
 }
