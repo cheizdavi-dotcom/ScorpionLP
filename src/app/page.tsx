@@ -1,4 +1,5 @@
 import Header from '@/components/header';
+import ParticlesBackground from '@/components/particles-background';
 
 export default function Home() {
   return (
@@ -27,15 +28,9 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Background video */}
+      {/* Background com partículas */}
       <div className="absolute inset-0 z-0 h-full w-full">
-        <video
-          autoPlay
-          loop
-          muted
-          className="h-full w-full object-cover"
-          src="https://videos.pexels.com/video-files/2099401/2099401-hd_1280_720_24fps.mp4"
-        />
+        <ParticlesBackground />
         <div className="absolute inset-0 bg-black/80" />
       </div>
     </div>
