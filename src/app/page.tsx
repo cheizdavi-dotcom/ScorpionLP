@@ -1,5 +1,3 @@
-import { Button } from '@/components/ui/button';
-
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-black p-8 text-center">
@@ -34,12 +32,9 @@ export default function Home() {
           agora sua estrutura com design tático.
         </p>
 
-        <Button
-          size="lg"
-          className="mt-4 rounded-full bg-gradient-to-r from-primary to-[#FF4D4D] px-10 py-6 text-base font-bold uppercase text-primary-foreground shadow-[0_0_40px_rgba(255,0,0,0.6)] transition-transform duration-300 ease-in-out hover:scale-105"
-        >
+        <button className="btn-main">
           QUERO MINHA ESTRUTURA TÁTICA
-        </Button>
+        </button>
       </div>
     </main>
   );

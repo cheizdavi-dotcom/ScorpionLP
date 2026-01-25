@@ -85,3 +85,38 @@
     background-size: 16px 16px;
   }
 }
+
+@layer components {
+  /* ESTILO DO BOTÃO PRINCIPAL "SCORPION GLOW" */
+  .btn-main {
+      /* Cor e Formato Base */
+      background: linear-gradient(90deg, #FF0000, #FF4D4D); /* Gradiente vermelho rico */
+      border-radius: 999px; /* Formato Pill perfeito */
+      padding: 18px 40px; /* Tamanho imponente */
+      border: none; /* Sem borda dura */
+      
+      /* O SEGREDO DA LUZ TRANSCEDENTE */
+      box-shadow: 
+          0 10px 30px -5px rgba(255, 0, 0, 0.6), /* A luz principal que vaza para baixo */
+          0 0 20px rgba(255, 0, 0, 0.3), /* A luz difusa ao redor */
+          inset 0 -3px 10px rgba(0, 0, 0, 0.2); /* Sombra interna na base para dar volume 3D */
+          
+      /* Tipografia e Transição */
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: all 0.3s ease; /* Transição suave para o hover */
+  }
+
+  /* EFEITO AO PASSAR O MOUSE (O brilho aumenta) */
+  .btn-main:hover {
+      transform: translateY(-3px); /* O botão "flutua" levemente */
+      box-shadow: 
+          0 15px 40px -5px rgba(255, 0, 0, 0.8), /* A luz de baixo fica mais forte */
+          0 0 30px rgba(255, 0, 0, 0.5), /* O brilho ao redor expande */
+          inset 0 -3px 10px rgba(0, 0, 0, 0.2); /* Volume se mantém */
+  }
+}
