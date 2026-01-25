@@ -4,7 +4,6 @@ import React, { useRef, useEffect } from 'react';
 
 const ParticlesBackground: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const mousePositionRef = useRef<{ x: number | null; y: number | null }>({ x: null, y: null });
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -47,7 +46,7 @@ const ParticlesBackground: React.FC = () => {
       }
 
       draw() {
-        ctx!.fillStyle = '#FF0000'; // Cor da Partícula
+        ctx!.fillStyle = 'rgba(255, 0, 0, 0.4)';
         ctx!.beginPath();
         ctx!.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx!.fill();
@@ -71,8 +70,6 @@ const ParticlesBackground: React.FC = () => {
 
     function connect() {
       const connectDistance = 120;
-      const mouseRadius = 150;
-      const mouse = mousePositionRef.current;
 
       for (let a = 0; a < particlesArray.length; a++) {
         for (let b = a; b < particlesArray.length; b++) {
@@ -81,29 +78,17 @@ const ParticlesBackground: React.FC = () => {
             (particlesArray[a].y - particlesArray[b].y) ** 2
           );
           
-          let lineOpacity = 0;
-          let isNearMouse = false;
-
-          if (mouse.x && mouse.y) {
-              const distanceToMouseA = Math.sqrt((particlesArray[a].x - mouse.x)**2 + (particlesArray[a].y - mouse.y)**2);
-              const distanceToMouseB = Math.sqrt((particlesArray[b].x - mouse.x)**2 + (particlesArray[b].y - mouse.y)**2);
-              if(distanceToMouseA < mouseRadius || distanceToMouseB < mouseRadius) {
-                  isNearMouse = true;
-              }
-          }
-
           if (distance < connectDistance) {
-             const baseOpacity = isNearMouse ? 0.7 : 0.4;
-             lineOpacity = (1 - distance / connectDistance) * baseOpacity;
-          }
-          
-          if (lineOpacity > 0) {
-            ctx!.strokeStyle = `rgba(255, 0, 0, ${lineOpacity})`; // Cor da linha
-            ctx!.lineWidth = 1;
-            ctx!.beginPath();
-            ctx!.moveTo(particlesArray[a].x, particlesArray[a].y);
-            ctx!.lineTo(particlesArray[b].x, particlesArray[b].y);
-            ctx!.stroke();
+             const lineOpacity = (1 - distance / connectDistance) * 0.4;
+            
+            if (lineOpacity > 0) {
+              ctx!.strokeStyle = `rgba(255, 0, 0, ${lineOpacity})`;
+              ctx!.lineWidth = 1;
+              ctx!.beginPath();
+              ctx!.moveTo(particlesArray[a].x, particlesArray[a].y);
+              ctx!.lineTo(particlesArray[b].x, particlesArray[b].y);
+              ctx!.stroke();
+            }
           }
         }
       }
@@ -119,22 +104,12 @@ const ParticlesBackground: React.FC = () => {
       animationFrameId = requestAnimationFrame(animate);
     }
     
-    const handleMouseMove = (event: MouseEvent) => {
-      mousePositionRef.current = { x: event.clientX, y: event.clientY };
-    };
-
-    const handleMouseLeave = () => {
-      mousePositionRef.current = { x: null, y: null };
-    };
-
     const handleResize = () => {
         resizeCanvas();
         init();
     }
 
     window.addEventListener('resize', handleResize);
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseout', handleMouseLeave);
     
     resizeCanvas();
     init();
@@ -142,8 +117,6 @@ const ParticlesBackground: React.FC = () => {
 
     return () => {
       window.removeEventListener('resize', handleResize);
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseout', handleMouseLeave);
       cancelAnimationFrame(animationFrameId);
     };
   }, []);
