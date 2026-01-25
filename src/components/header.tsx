@@ -28,7 +28,6 @@ const Header = () => {
               <li><Link href="#" className="text-[17px] font-bold text-primary">Home</Link></li>
               <li><Link href="#" className="text-[17px] font-bold text-white transition-colors hover:text-primary">Sobre Nós</Link></li>
               <li><Link href="#" className="text-[17px] font-bold text-white transition-colors hover:text-primary">Valor</Link></li>
-              <li><Link href="#" className="text-[17px] font-bold text-white transition-colors hover:text-primary">O Protocolo</Link></li>
             </ul>
           </nav>
           <button className="btn-contact hidden md:block">
