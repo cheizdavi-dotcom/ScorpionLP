@@ -7,28 +7,28 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-black/50 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
+      <div className="mx-auto flex h-[90px] max-w-7xl items-center justify-between px-5">
         <Link href="/">
           {logo ? (
             <Image
               src={logo.imageUrl}
               alt={logo.description}
-              width={140}
-              height={35}
+              width={180}
+              height={45}
               data-ai-hint={logo.imageHint}
               priority
             />
           ) : (
-            <div className="h-[35px] w-[140px] rounded bg-gray-700" />
+            <div className="h-[45px] w-[180px] rounded bg-gray-700" />
           )}
         </Link>
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-[50px]">
           <nav className="hidden md:flex">
-            <ul className="flex items-center gap-6">
-              <li><Link href="#" className="text-sm font-medium text-white transition-colors hover:text-primary">Home</Link></li>
-              <li><Link href="#" className="text-sm font-medium text-white transition-colors hover:text-primary">Sobre Nós</Link></li>
-              <li><Link href="#" className="text-sm font-medium text-white transition-colors hover:text-primary">Valor</Link></li>
-              <li><Link href="#" className="text-sm font-medium text-white transition-colors hover:text-primary">O Protocolo</Link></li>
+            <ul className="flex items-center gap-[35px]">
+              <li><Link href="#" className="text-base font-semibold text-white transition-colors hover:text-primary">Home</Link></li>
+              <li><Link href="#" className="text-base font-semibold text-white transition-colors hover:text-primary">Sobre Nós</Link></li>
+              <li><Link href="#" className="text-base font-semibold text-white transition-colors hover:text-primary">Valor</Link></li>
+              <li><Link href="#" className="text-base font-semibold text-white transition-colors hover:text-primary">O Protocolo</Link></li>
             </ul>
           </nav>
           <button className="btn-contact hidden md:block">
