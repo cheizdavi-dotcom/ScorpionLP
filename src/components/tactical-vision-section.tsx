@@ -22,13 +22,13 @@ const TacticalVisionSection = () => {
             )}
             <div className="relative z-10 flex flex-col">
               <p className="font-bold uppercase tracking-wider text-primary">
-                O CÓDIGO SCORPION
+                NOSSOS VALORES
               </p>
               <h2 className="mt-4 font-black text-3xl uppercase text-white sm:text-4xl">
-                Engenharia de Elite. Resultados Brutais. Sua Estrutura Pronta para a Guerra Digital.
+                Estruturas que Vendem. Design que Domina. A Sua Marca em Outro Nível.
               </h2>
               <p className="mt-6 text-lg text-white/80">
-                Não entregamos apenas código, entregamos uma vantagem competitiva desleal. Conecte sua operação a uma estrutura desenhada para dominar o seu mercado e esmagar a concorrência.
+                Não criamos apenas páginas bonitas. Desenvolvemos ferramentas de vendas projetadas para conectar sua oferta ao cliente certo e maximizar suas conversões, sem desperdiçar tráfego.
               </p>
             </div>
             <Link href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-8 self-start">
@@ -48,10 +48,10 @@ const TacticalVisionSection = () => {
                   NOSSA VISÃO
                 </p>
                 <h3 className="mt-2 text-2xl font-black uppercase">
-                  Ser a Artilharia Pesada do Seu Negócio Digital.
+                  Ser a Referência Absoluta em Estruturas de Alta Conversão.
                 </h3>
                 <p className="mt-4 text-base text-white/90">
-                  Landing Pages não são cartões de visita, são armas. Nossa visão é equipar você com o poder de fogo necessário para vencer qualquer disputa por atenção.
+                  Nossa visão é que cada cliente nosso deixe de competir por atenção e passe a dominar o seu nicho com um posicionamento digital inquestionável.
                 </p>
               </div>
             </div>
@@ -64,10 +64,10 @@ const TacticalVisionSection = () => {
                   NOSSA MISSÃO
                 </p>
                 <h3 className="mt-2 text-2xl font-black uppercase">
-                  Eliminar o Amadorismo e Maximizar o Seu Lucro.
+                  Transformar Visualizações em Lucro Real.
                 </h3>
                 <p className="mt-4 text-base text-white/90">
-                  Nossa missão é garantir que você nunca mais perca um lead por causa de uma estrutura lenta ou confusa. Priorizamos a performance e a conversão acima de tudo.
+                  Nossa missão é eliminar o amadorismo. Entregamos estruturas que funcionam, convertem e colocam dinheiro no seu bolso, focando 100% no resultado do seu negócio.
                 </p>
               </div>
             </div>
