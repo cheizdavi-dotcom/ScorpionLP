@@ -64,9 +64,9 @@ export default function Home() {
         <div className="my-12 h-[1px] w-full bg-primary/30"></div>
       </div>
 
-      <DesignPerformanceSection />
-
       <AlertStrip />
+      
+      <DesignPerformanceSection />
     </div>
   );
 }
