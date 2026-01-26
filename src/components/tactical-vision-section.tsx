@@ -6,7 +6,7 @@ const TacticalVisionSection = () => {
   const tacticalBg = PlaceHolderImages.find((img) => img.id === 'tactical-bg');
 
   return (
-    <section className="w-full bg-black py-24 sm:py-32">
+    <section className="tech-grid w-full py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {/* Left Card */}
