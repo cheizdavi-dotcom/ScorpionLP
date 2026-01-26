@@ -27,7 +27,7 @@ const DesignPerformanceSection = () => {
                 src={performanceImage.imageUrl}
                 alt={performanceImage.description}
                 fill
-                className="object-cover"
+                className="object-contain"
                 data-ai-hint={performanceImage.imageHint}
               />
             ) : (
