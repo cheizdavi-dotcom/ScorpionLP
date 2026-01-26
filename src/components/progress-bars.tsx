@@ -55,7 +55,7 @@ const ProgressBars = () => {
           </div>
           <Progress 
             value={progressValues[index]} 
-            className="h-2 bg-primary/20 [&>div]:duration-[1500ms]" 
+            className="h-2 bg-primary/20 [&>div]:duration-[2500ms]" 
           />
         </div>
       ))}
