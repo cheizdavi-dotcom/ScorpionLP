@@ -8,7 +8,7 @@ const DesignPerformanceSection = () => {
   return (
     <section className="tech-grid w-full py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-stretch gap-16 lg:grid-cols-2">
           {/* Left Column */}
           <div className="lg:pr-8">
             <h2 className="font-black text-4xl uppercase text-white sm:text-5xl">
