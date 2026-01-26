@@ -1,5 +1,6 @@
 import Header from '@/components/header';
 import ParticlesBackground from '@/components/particles-background';
+import ProposalSection from '@/components/proposal-section';
 import SaturatedMarket from '@/components/saturated-market';
 
 export default function Home() {
@@ -40,6 +41,13 @@ export default function Home() {
       </div>
 
       <SaturatedMarket />
+
+      {/* Separator */}
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="h-[1px] w-full bg-primary/30"></div>
+      </div>
+
+      <ProposalSection />
     </div>
   );
 }

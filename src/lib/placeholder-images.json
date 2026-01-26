@@ -5,6 +5,12 @@
       "description": "ScorpionLP logo",
       "imageUrl": "https://i.imgur.com/E9Pu9wn.png",
       "imageHint": "scorpion logo"
+    },
+    {
+      "id": "headshot",
+      "description": "Professional headshot for the proposal section",
+      "imageUrl": "https://images.unsplash.com/photo-1607031542107-f6f46b5d54e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjkzNTIxNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
     }
   ]
 }
