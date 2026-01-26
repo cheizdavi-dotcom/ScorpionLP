@@ -21,7 +21,7 @@ const DesignPerformanceSection = () => {
           </div>
 
           {/* Right Column */}
-          <div className="relative w-full overflow-hidden">
+          <div className="relative h-full w-full overflow-hidden">
             {performanceImage ? (
               <Image
                 src={performanceImage.imageUrl}
