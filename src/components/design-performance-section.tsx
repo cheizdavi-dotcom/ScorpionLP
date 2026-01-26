@@ -21,7 +21,7 @@ const DesignPerformanceSection = () => {
           </div>
 
           {/* Right Column */}
-          <div className="relative w-full min-h-[500px] overflow-hidden rounded-lg">
+          <div className="relative w-full overflow-hidden">
             {performanceImage ? (
               <Image
                 src={performanceImage.imageUrl}
@@ -31,7 +31,7 @@ const DesignPerformanceSection = () => {
                 data-ai-hint={performanceImage.imageHint}
               />
             ) : (
-              <div className="h-full w-full rounded bg-gray-700" />
+              <div className="h-full w-full bg-gray-700" />
             )}
           </div>
         </div>
