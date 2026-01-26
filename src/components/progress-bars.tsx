@@ -15,17 +15,14 @@ const ProgressBars = () => {
     skills.map(() => 0)
   );
   const ref = useRef<HTMLDivElement>(null);
+  const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          const newValues = skills.map(skill => skill.value);
-          
-          requestAnimationFrame(() => {
-            setProgressValues(newValues);
-          });
-          observer.disconnect();
+          setIsIntersecting(true);
+          observer.unobserve(entry.target);
         }
       },
       {
@@ -45,6 +42,44 @@ const ProgressBars = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (isIntersecting) {
+      const animationDuration = 2000; // 2 seconds
+      const updateFrequency = 1000 / 60; // ~60fps
+
+      const intervals = skills.map((skill, index) => {
+        let startValue = 0;
+        const endValue = skill.value;
+        const totalUpdates = animationDuration / updateFrequency;
+        const increment = endValue / totalUpdates;
+
+        const interval = setInterval(() => {
+          startValue += increment;
+          if (startValue >= endValue) {
+            setProgressValues(prev => {
+                const newValues = [...prev];
+                newValues[index] = endValue;
+                return newValues;
+            });
+            clearInterval(interval);
+          } else {
+            setProgressValues(prev => {
+                const newValues = [...prev];
+                newValues[index] = Math.ceil(startValue);
+                return newValues;
+            });
+          }
+        }, updateFrequency);
+
+        return interval;
+      });
+
+      return () => {
+        intervals.forEach(clearInterval);
+      };
+    }
+  }, [isIntersecting]);
+
   return (
     <div ref={ref} className="mt-12 space-y-8">
       {skills.map((skill, index) => (
@@ -55,7 +90,7 @@ const ProgressBars = () => {
           </div>
           <Progress 
             value={progressValues[index]} 
-            className="h-2 bg-primary/20 [&>div]:duration-[2500ms]" 
+            className="h-2 bg-primary/20" 
           />
         </div>
       ))}
