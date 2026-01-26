@@ -6,22 +6,22 @@ const DesignPerformanceSection = () => {
   const performanceImage = PlaceHolderImages.find((img) => img.id === 'design-performance-bg');
 
   return (
-    <section className="tech-grid w-full py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 items-stretch gap-16 lg:grid-cols-2">
-          {/* Left Column */}
-          <div className="lg:pr-8">
-            <h2 className="font-black text-4xl uppercase text-white sm:text-5xl">
-              DESIGN E <span className="text-primary">PERFORMANCE</span>
-            </h2>
-            <p className="mt-6 text-lg text-muted-foreground">
-              Desenvolvemos estruturas focadas em converter visitantes em clientes. Cada detalhe é pensado para garantir que sua página seja rápida, funcional e visualmente atraente.
-            </p>
-            <ProgressBars />
+    <section className="tech-grid w-full">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch">
+          <div className="py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <div className="lg:pr-8">
+              <h2 className="font-black text-4xl uppercase text-white sm:text-5xl">
+                DESIGN E <span className="text-primary">PERFORMANCE</span>
+              </h2>
+              <p className="mt-6 text-lg text-muted-foreground">
+                Desenvolvemos estruturas focadas em converter visitantes em clientes. Cada detalhe é pensado para garantir que sua página seja rápida, funcional e visualmente atraente.
+              </p>
+              <ProgressBars />
+            </div>
           </div>
 
-          {/* Right Column */}
-          <div className="relative min-h-[450px] overflow-hidden lg:min-h-0">
+          <div className="relative min-h-[450px] lg:min-h-0">
             {performanceImage ? (
               <Image
                 src={performanceImage.imageUrl}
