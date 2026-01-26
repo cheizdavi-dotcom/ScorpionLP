@@ -10,13 +10,13 @@ const TacticalVisionSection = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {/* Left Card */}
-          <div className="relative flex min-h-[550px] flex-col justify-end overflow-hidden rounded-lg bg-black p-8 md:p-12">
+          <div className="relative flex min-h-[550px] flex-col justify-end overflow-hidden rounded-lg border border-primary/50 bg-black p-8 shadow-[0_0_25px_rgba(255,0,0,0.2)] md:p-12">
             {tacticalBg && (
               <Image
                 src={tacticalBg.imageUrl}
                 alt={tacticalBg.description}
                 fill
-                className="absolute inset-0 z-0 h-full w-full object-cover opacity-20"
+                className="absolute inset-0 z-0 h-full w-full object-cover opacity-40"
                 data-ai-hint={tacticalBg.imageHint}
               />
             )}
