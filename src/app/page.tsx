@@ -3,6 +3,7 @@ import ParticlesBackground from '@/components/particles-background';
 import ProposalSection from '@/components/proposal-section';
 import SaturatedMarket from '@/components/saturated-market';
 import TacticalVisionSection from '@/components/tactical-vision-section';
+import AlertStrip from '@/components/alert-strip';
 
 export default function Home() {
   return (
@@ -56,6 +57,8 @@ export default function Home() {
       </div>
 
       <TacticalVisionSection />
+
+      <AlertStrip />
     </div>
   );
 }
