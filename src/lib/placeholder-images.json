@@ -17,6 +17,12 @@
       "description": "Tactical background for the vision section",
       "imageUrl": "https://i.imgur.com/pTOY3ZP.png",
       "imageHint": "hacker computer"
+    },
+    {
+      "id": "design-performance-bg",
+      "description": "Dark desk setup with red lighting for performance section",
+      "imageUrl": "https://i.imgur.com/zY3LLyC.jpeg",
+      "imageHint": "dark setup"
     }
   ]
 }

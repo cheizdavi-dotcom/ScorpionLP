@@ -4,6 +4,7 @@ import ProposalSection from '@/components/proposal-section';
 import SaturatedMarket from '@/components/saturated-market';
 import TacticalVisionSection from '@/components/tactical-vision-section';
 import AlertStrip from '@/components/alert-strip';
+import DesignPerformanceSection from '@/components/design-performance-section';
 
 export default function Home() {
   return (
@@ -57,6 +58,13 @@ export default function Home() {
       </div>
 
       <TacticalVisionSection />
+
+      {/* Separator */}
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="my-12 h-[1px] w-full bg-primary/30"></div>
+      </div>
+
+      <DesignPerformanceSection />
 
       <AlertStrip />
     </div>
