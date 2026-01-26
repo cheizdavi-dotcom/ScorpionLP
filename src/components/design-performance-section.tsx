@@ -21,13 +21,13 @@ const DesignPerformanceSection = () => {
           </div>
 
           {/* Right Column */}
-          <div className="relative h-[500px] lg:h-full w-full min-h-[500px] overflow-hidden rounded-lg border-2 border-primary/30">
+          <div className="relative w-full min-h-[500px] overflow-hidden rounded-lg">
             {performanceImage ? (
               <Image
                 src={performanceImage.imageUrl}
                 alt={performanceImage.description}
                 fill
-                className="object-contain"
+                className="object-cover"
                 data-ai-hint={performanceImage.imageHint}
               />
             ) : (
