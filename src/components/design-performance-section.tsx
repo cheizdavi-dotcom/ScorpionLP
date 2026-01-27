@@ -6,29 +6,34 @@ const DesignPerformanceSection = () => {
   const performanceImage = PlaceHolderImages.find((img) => img.id === 'design-performance-bg');
 
   return (
-    <section className="tech-grid relative w-full overflow-hidden bg-black py-24 sm:py-32 flex items-center justify-center min-h-[80vh]">
-      {performanceImage ? (
-        <Image
-          src={performanceImage.imageUrl}
-          alt={performanceImage.description}
-          fill
-          className="absolute inset-0 h-full w-full object-cover"
-          data-ai-hint={performanceImage.imageHint}
-        />
-      ) : (
-        <div className="absolute inset-0 h-full w-full bg-gray-700" />
-      )}
-      <div className="absolute inset-0 bg-black/70"></div>
+    <section className="tech-grid w-full bg-black">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
+        {/* Left Column: Content */}
+        <div className="flex items-center justify-center py-24 px-4 sm:px-6 sm:py-32 lg:px-8">
+          <div className="max-w-2xl">
+            <h2 className="font-black text-4xl uppercase text-white sm:text-5xl">
+              DESIGN E <span className="text-primary">PERFORMANCE</span>
+            </h2>
+            <p className="mt-6 text-lg text-muted-foreground">
+              Desenvolvemos estruturas focadas em converter visitantes em clientes. Cada detalhe é pensado para garantir que sua página seja rápida, funcional e visualmente atraente.
+            </p>
+            <ProgressBars />
+          </div>
+        </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0">
-          <h2 className="font-black text-4xl uppercase text-white sm:text-5xl">
-            DESIGN E <span className="text-primary">PERFORMANCE</span>
-          </h2>
-          <p className="mt-6 text-lg text-muted-foreground">
-            Desenvolvemos estruturas focadas em converter visitantes em clientes. Cada detalhe é pensado para garantir que sua página seja rápida, funcional e visualmente atraente.
-          </p>
-          <ProgressBars />
+        {/* Right Column: Image */}
+        <div className="relative min-h-[50vh] w-full lg:min-h-0">
+          {performanceImage ? (
+            <Image
+              src={performanceImage.imageUrl}
+              alt={performanceImage.description}
+              fill
+              className="object-cover"
+              data-ai-hint={performanceImage.imageHint}
+            />
+          ) : (
+            <div className="h-full w-full bg-gray-700" />
+          )}
         </div>
       </div>
     </section>
