@@ -37,14 +37,13 @@ const EliteDesignSection = () => {
                 />
               </div>
             )}
-            <h2 className="text-4xl font-black text-white uppercase">COMANDO FINANCEIRO</h2>
-            <p className="mt-2 text-lg font-bold text-primary tracking-wider">Sistemas de Gestão & Inteligência de Dados.</p>
+            <h2 className="text-3xl font-black text-white uppercase">COMANDO FINANCEIRO: ESTRUTURA DE VENDAS E UX.</h2>
             <p className="mt-6 text-base text-muted-foreground max-w-lg">
-              A prova de que a complexidade pode ser elegante. Um dashboard focado em UX para quem exige controle total da sua operação.
+              Desenvolvemos a landing page oficial para esta ferramenta de gestão avançada. O desafio foi traduzir uma solução técnica complexa em uma experiência de venda fluida, unindo design de alto padrão e uma arquitetura focada 100% em conversão.
             </p>
             <Link href="#" className="mt-8 inline-block">
               <button className="btn-contact">
-                VER PROJETO AO VIVO
+                CONHECER ESTRUTURA AO VIVO
               </button>
             </Link>
           </div>
