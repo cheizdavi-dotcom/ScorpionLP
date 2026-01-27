@@ -27,25 +27,25 @@
     {
       "id": "elite-ecommerce",
       "description": "Mockup of a premium e-commerce website",
-      "imageUrl": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjB3ZWJzaXRlfGVufDB8fHx8MTc2OTUxMDE2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/P5n4IuI.png",
       "imageHint": "ecommerce website"
     },
     {
       "id": "elite-landing-page",
       "description": "Mockup of a premium landing page",
-      "imageUrl": "https://images.unsplash.com/photo-1625315642929-3774ba1d1af4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsYW5kaW5nJTIwcGFnZXxlbnwwfHx8fDE3Njk1MTcxNjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/G4Yx1ro.png",
       "imageHint": "landing page"
     },
     {
       "id": "elite-institutional",
       "description": "Mockup of a premium institutional site",
-      "imageUrl": "https://images.unsplash.com/photo-1767788543704-d68ce083048e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjB3ZWJzaXRlfGVufDB8fHx8MTc2OTUwMTkyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/bL5dY22.png",
       "imageHint": "corporate website"
     },
     {
       "id": "elite-sales-page",
       "description": "Mockup of a premium sales page",
-      "imageUrl": "https://images.unsplash.com/photo-1762330464720-d77f2614f1b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYWxlcyUyMHBhZ2V8ZW58MHx8fHwxNzY5NTMxMzA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/kR0b2k7.png",
       "imageHint": "sales page"
     }
   ]
