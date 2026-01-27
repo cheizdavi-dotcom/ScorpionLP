@@ -58,14 +58,13 @@ const EliteDesignSection = () => {
         <Carousel
           opts={{
             align: "start",
-            loop: true,
           }}
-          className="w-full max-w-5xl mx-auto"
+          className="w-full max-w-7xl mx-auto"
         >
           <CarouselContent className="-ml-8">
             {portfolioProjects.map((item) => (
               item && item.imageUrl && (
-                <CarouselItem key={item.id} className="pl-8 md:basis-1/2">
+                <CarouselItem key={item.id} className="pl-8 basis-full md:basis-1/2 lg:basis-1/4">
                   <div>
                     <div className="overflow-hidden rounded-lg">
                       <Image
