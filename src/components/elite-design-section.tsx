@@ -1,5 +1,12 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const projects = [
   {
@@ -48,28 +55,40 @@ const EliteDesignSection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {portfolioProjects.map((item) => (
-            item && item.imageUrl && (
-              <div key={item.id}>
-                <div className="overflow-hidden rounded-lg">
-                  <Image
-                    src={item.imageUrl}
-                    alt={item.description || item.title}
-                    width={800}
-                    height={600}
-                    className="w-full h-auto object-cover"
-                    data-ai-hint={item.imageHint}
-                  />
-                </div>
-                <div className="mt-4">
-                  <h3 className="text-xl font-bold text-white uppercase">{item.title}</h3>
-                  <p className="mt-1 text-sm text-primary font-semibold uppercase tracking-wider">{item.tag}</p>
-                </div>
-              </div>
-            )
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-5xl mx-auto"
+        >
+          <CarouselContent className="-ml-8">
+            {portfolioProjects.map((item) => (
+              item && item.imageUrl && (
+                <CarouselItem key={item.id} className="pl-8 md:basis-1/2">
+                  <div>
+                    <div className="overflow-hidden rounded-lg">
+                      <Image
+                        src={item.imageUrl}
+                        alt={item.description || item.title}
+                        width={800}
+                        height={600}
+                        className="w-full h-auto object-cover"
+                        data-ai-hint={item.imageHint}
+                      />
+                    </div>
+                    <div className="mt-4">
+                      <h3 className="text-xl font-bold text-white uppercase">{item.title}</h3>
+                      <p className="mt-1 text-sm text-primary font-semibold uppercase tracking-wider">{item.tag}</p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              )
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden sm:flex" />
+          <CarouselNext className="hidden sm:flex" />
+        </Carousel>
       </div>
     </section>
   );
