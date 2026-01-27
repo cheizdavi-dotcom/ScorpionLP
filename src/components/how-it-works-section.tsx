@@ -45,7 +45,7 @@ const HowItWorksSection = () => {
           </h2>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 gap-y-16 gap-x-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-20 grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-8 lg:grid-cols-4 lg:gap-x-12">
           {steps.map((step, index) => (
             <div key={step.title} className="relative flex flex-col items-center text-center">
               {/* Vertical separator for larger screens */}
