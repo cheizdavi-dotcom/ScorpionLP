@@ -32,7 +32,7 @@ const HowItWorksSection = () => {
     <section className="relative w-full bg-black py-24 sm:py-32 overflow-hidden">
       {/* Red Glow Background Effect */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="h-[500px] w-[500px] bg-primary/20 rounded-full blur-[200px]"></div>
+        <div className="h-[700px] w-[700px] bg-primary/25 rounded-full blur-[250px]"></div>
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
