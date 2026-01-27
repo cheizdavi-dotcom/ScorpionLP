@@ -40,12 +40,12 @@ const EliteDesignSection = () => {
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 max-w-4xl mx-auto">
-          <h2 className="text-4xl font-black uppercase text-white sm:text-5xl">
-            NOSSOS PADRÕES DE PROJETO.
-          </h2>
-          <p className="mt-6 text-lg text-muted-foreground">
-            Estruturas estratégicas validadas que utilizamos para dominar mercados.
+           <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+            ÚLTIMOS PROJETOS
           </p>
+          <h2 className="mt-4 text-4xl font-black text-white sm:text-5xl">
+            Confira alguns dos últimos projetos realizados
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
