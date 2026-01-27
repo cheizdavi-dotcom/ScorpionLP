@@ -41,7 +41,7 @@ const EliteDesignSection = () => {
             <p className="mt-6 text-base text-muted-foreground max-w-lg">
               Desenvolvemos a landing page oficial para esta ferramenta de gestão avançada. O desafio foi traduzir uma solução técnica complexa em uma experiência de venda fluida, unindo design de alto padrão e uma arquitetura focada 100% em conversão.
             </p>
-            <Link href="#" className="mt-8 inline-block">
+            <Link href="https://fimdocaosfinanceiro.netlify.app/" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block">
               <button className="btn-contact">
                 CONHECER ESTRUTURA AO VIVO
               </button>
