@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import ProgressBars from './progress-bars';
+import ParticlesBackground from './particles-background';
 
 const DesignPerformanceSection = () => {
   const performanceImage = PlaceHolderImages.find((img) => img.id === 'design-performance-bg');
@@ -9,8 +10,11 @@ const DesignPerformanceSection = () => {
     <section className="w-full bg-black">
       <div className="mx-auto grid max-w-full grid-cols-1 lg:grid-cols-2 lg:items-stretch">
         {/* Left Column: Content */}
-        <div className="tech-grid animate-move-grid flex items-center justify-center py-24 px-4 sm:px-6 sm:py-32 lg:px-8">
-          <div className="max-w-2xl">
+        <div className="relative flex items-center justify-center overflow-hidden py-24 px-4 sm:px-6 sm:py-32 lg:px-8">
+          <div className="absolute inset-0 z-0 h-full w-full">
+            <ParticlesBackground />
+          </div>
+          <div className="relative z-10 max-w-2xl">
             <h2 className="font-black text-4xl uppercase text-white sm:text-5xl">
               DESIGN E <span className="text-primary">PERFORMANCE</span>
             </h2>
