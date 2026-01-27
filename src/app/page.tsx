@@ -6,6 +6,7 @@ import TacticalVisionSection from '@/components/tactical-vision-section';
 import AlertStrip from '@/components/alert-strip';
 import DesignPerformanceSection from '@/components/design-performance-section';
 import HowItWorksSection from '@/components/how-it-works-section';
+import EliteDesignSection from '@/components/elite-design-section';
 
 export default function Home() {
   return (
@@ -75,6 +76,8 @@ export default function Home() {
       </div>
 
       <HowItWorksSection />
+
+      <EliteDesignSection />
     </div>
   );
 }
