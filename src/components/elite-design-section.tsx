@@ -4,23 +4,23 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 const projects = [
   {
     id: 'elite-ecommerce',
-    title: 'E-Commerce de Elite',
-    tags: ['Vendas', 'Catálogo', 'Checkout'],
+    title: 'E-COMMERCE ELITE',
+    tag: 'Vendas & Performance',
   },
   {
     id: 'elite-landing-page',
-    title: 'Landing Page de Conversão',
-    tags: ['Leads', 'Oferta Direta', 'Tráfego Pago'],
+    title: 'LANDING PAGE DE ALTA CONVERSÃO',
+    tag: 'Captura & Leads',
   },
   {
     id: 'elite-institutional',
-    title: 'Site Institucional Premium',
-    tags: ['Marca', 'Confiança', 'Portfólio'],
+    title: 'INSTITUCIONAL PREMIUM',
+    tag: 'Autoridade & Branding',
   },
   {
     id: 'elite-sales-page',
-    title: 'Página de Vendas Matadora',
-    tags: ['Infoproduto', 'Copywriting', 'Lançamento'],
+    title: 'PÁGINA DE VENDAS DIRETA',
+    tag: 'Oferta & Velocidade',
   },
 ];
 
@@ -39,41 +39,32 @@ const EliteDesignSection = () => {
       <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-2 bg-primary/20 blur-[150px] pointer-events-none"></div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 max-w-4xl mx-auto">
           <h2 className="text-4xl font-black uppercase text-white sm:text-5xl">
             NOSSOS PADRÕES DE PROJETO.
           </h2>
-          <p className="mt-6 max-w-4xl mx-auto text-lg text-muted-foreground">
-            Não entregamos apenas sites bonitos. Desenvolvemos estruturas estratégicas validadas para diferentes objetivos de negócio. Veja os modelos que utilizamos para dominar mercados.
+          <p className="mt-6 text-lg text-muted-foreground">
+            Estruturas estratégicas validadas que utilizamos para dominar mercados.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {portfolioProjects.map((item) => (
             item && item.imageUrl && (
-              <div 
-                key={item.id} 
-                className="group relative flex flex-col overflow-hidden rounded-lg bg-[#111111] border border-[#333333] transition-all duration-300 ease-in-out hover:border-primary hover:shadow-[0_0_30px_rgba(255,0,0,0.25)]"
-              >
-                <div className="overflow-hidden">
+              <div key={item.id}>
+                <div className="overflow-hidden rounded-lg">
                   <Image
                     src={item.imageUrl}
                     alt={item.description || item.title}
                     width={800}
                     height={600}
-                    className="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                    className="w-full h-auto object-cover"
                     data-ai-hint={item.imageHint}
                   />
                 </div>
-                <div className="p-6 flex-grow flex flex-col">
-                  <h3 className="text-xl font-bold text-white">{item.title}</h3>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {item.tags.map(tag => (
-                      <span key={tag} className="text-xs font-semibold text-primary uppercase tracking-wider bg-primary/10 px-2 py-1 rounded">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+                <div className="mt-4">
+                  <h3 className="text-xl font-bold text-white uppercase">{item.title}</h3>
+                  <p className="mt-1 text-sm text-primary font-semibold uppercase tracking-wider">{item.tag}</p>
                 </div>
               </div>
             )
