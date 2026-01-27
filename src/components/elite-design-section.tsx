@@ -11,6 +11,16 @@ const EliteDesignSection = () => {
       <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-2/3 bg-primary/10 rounded-full blur-[200px] pointer-events-none"></div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        
+        <div className="text-center mb-16">
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+            ÚLTIMOS PROJETOS
+          </p>
+          <h2 className="mt-3 font-black text-4xl text-white sm:text-5xl">
+            Confira alguns dos últimos projetos realizados
+          </h2>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-20 items-center">
         
           {/* Left Column: Case Real */}
