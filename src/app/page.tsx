@@ -62,19 +62,19 @@ export default function Home() {
 
       {/* Separator */}
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="h-[1px] w-full bg-primary/30"></div>
-      </div>
-
-      <HowItWorksSection />
-
-      {/* Separator */}
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="my-12 h-[1px] w-full bg-primary/30"></div>
       </div>
 
       <AlertStrip />
       
       <DesignPerformanceSection />
+
+      {/* Separator */}
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="h-[1px] w-full bg-primary/30"></div>
+      </div>
+
+      <HowItWorksSection />
     </div>
   );
 }
