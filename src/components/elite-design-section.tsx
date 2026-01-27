@@ -20,8 +20,8 @@ const EliteDesignSection = () => {
                  <Image
                   src={mainProjectImage.imageUrl}
                   alt={mainProjectImage.description}
-                  width={800}
-                  height={520}
+                  width={600}
+                  height={390}
                   className="w-full h-auto drop-shadow-[0_20px_40px_rgba(255,0,0,0.25)]"
                   data-ai-hint={mainProjectImage.imageHint}
                 />
