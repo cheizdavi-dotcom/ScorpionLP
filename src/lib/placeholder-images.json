@@ -47,6 +47,12 @@
       "description": "Mockup of a premium sales page",
       "imageUrl": "https://i.imgur.com/kR0b2k7.png",
       "imageHint": "sales page"
+    },
+    {
+      "id": "comando-financeiro-mockup",
+      "description": "Mockup of Comando Financeiro project on a MacBook",
+      "imageUrl": "https://i.imgur.com/J5k2HhK.png",
+      "imageHint": "dashboard macbook"
     }
   ]
 }
