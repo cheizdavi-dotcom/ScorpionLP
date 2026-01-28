@@ -28,7 +28,7 @@ const Footer = () => {
                 A SCORPIONLP cria soluções personalizadas, modernas e funcionais para destacar seu negócio online. Transformamos sua ideia em sucesso digital!
               </p>
               <div className="mt-6 flex gap-4">
-                <Link href="#" className="text-white transition-colors hover:text-primary">
+                <Link href="https://www.instagram.com/scorpionlp.br/" target="_blank" rel="noopener noreferrer" className="text-white transition-colors hover:text-primary">
                   <Instagram className="h-6 w-6" />
                 </Link>
               </div>
