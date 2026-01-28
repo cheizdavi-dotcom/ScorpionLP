@@ -8,6 +8,7 @@ import DesignPerformanceSection from '@/components/design-performance-section';
 import HowItWorksSection from '@/components/how-it-works-section';
 import EliteDesignSection from '@/components/elite-design-section';
 import OfferSection from '@/components/offer-section';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
@@ -71,6 +72,8 @@ export default function Home() {
       <EliteDesignSection />
 
       <OfferSection />
+
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,71 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import { Instagram } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+
+const Footer = () => {
+  const logo = PlaceHolderImages.find((img) => img.id === 'logo');
+
+  return (
+    <footer className="w-full bg-black text-white">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="border-t border-primary/30 py-16">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
+            {/* Column 1: Logo and Description */}
+            <div className="md:col-span-5 lg:col-span-4">
+              {logo && (
+                <Link href="/" className="mb-6 inline-block">
+                  <Image
+                    src={logo.imageUrl}
+                    alt={logo.description}
+                    width={220}
+                    height={55}
+                    data-ai-hint={logo.imageHint}
+                  />
+                </Link>
+              )}
+              <p className="max-w-sm text-sm text-muted-foreground">
+                A SCORPIONLP cria soluções personalizadas, modernas e funcionais para destacar seu negócio online. Transformamos sua ideia em sucesso digital!
+              </p>
+              <div className="mt-6 flex gap-4">
+                <Link href="#" className="text-white transition-colors hover:text-primary">
+                  <Instagram className="h-6 w-6" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Spacer */}
+            <div className="md:col-span-2 lg:col-span-4"></div>
+
+            {/* Column 2: Suporte */}
+            <div className="md:col-span-2 lg:col-span-2">
+              <h3 className="text-base font-bold uppercase tracking-wider text-primary">Suporte</h3>
+              <ul className="mt-4 space-y-3">
+                <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Central de Ajuda</Link></li>
+                <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">FAQ</Link></li>
+                <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Contato</Link></li>
+              </ul>
+            </div>
+
+            {/* Column 3: Empresa */}
+            <div className="md:col-span-3 lg:col-span-2">
+              <h3 className="text-base font-bold uppercase tracking-wider text-primary">Empresa</h3>
+              <ul className="mt-4 space-y-3">
+                <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Home</Link></li>
+                <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Sobre Nós</Link></li>
+                <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Valor</Link></li>
+                <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Projetos</Link></li>
+                <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Contato</Link></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="border-t border-primary/30 py-6 text-center">
+            <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} ScorpionLP. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
