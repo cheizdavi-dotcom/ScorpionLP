@@ -54,7 +54,9 @@ export default function Home() {
         <div className="h-[1px] w-full bg-primary/30"></div>
       </div>
 
-      <ProposalSection />
+      <div id="sobre-nos">
+        <ProposalSection />
+      </div>
 
       {/* Separator */}
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -71,7 +73,9 @@ export default function Home() {
 
       <EliteDesignSection />
 
-      <OfferSection />
+      <div id="valor">
+        <OfferSection />
+      </div>
 
       <Footer />
     </div>

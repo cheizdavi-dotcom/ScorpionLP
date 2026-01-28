@@ -25,9 +25,9 @@ const Header = () => {
         <div className="flex items-center gap-[60px]">
           <nav className="hidden md:flex">
             <ul className="flex items-center gap-[35px]">
-              <li><Link href="#" className="text-[17px] font-bold text-primary">Home</Link></li>
-              <li><Link href="#" className="text-[17px] font-bold text-white transition-colors hover:text-primary">Sobre Nós</Link></li>
-              <li><Link href="#" className="text-[17px] font-bold text-white transition-colors hover:text-primary">Valor</Link></li>
+              <li><Link href="/" className="text-[17px] font-bold text-primary">Home</Link></li>
+              <li><Link href="#sobre-nos" className="text-[17px] font-bold text-white transition-colors hover:text-primary">Sobre Nós</Link></li>
+              <li><Link href="#valor" className="text-[17px] font-bold text-white transition-colors hover:text-primary">Valor</Link></li>
             </ul>
           </nav>
           <button className="btn-contact hidden md:block">
