@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-black text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="border-t border-primary/30 py-16">
+        <div className="border-t border-primary/30 py-12">
           <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-12 md:gap-x-8 md:text-left">
             {/* Column 1: Logo and Description */}
             <div className="flex flex-col items-center md:col-span-4 md:items-start lg:col-span-5">
@@ -18,8 +18,8 @@ const Footer = () => {
                   <Image
                     src={logo.imageUrl}
                     alt={logo.description}
-                    width={220}
-                    height={55}
+                    width={200}
+                    height={50}
                     data-ai-hint={logo.imageHint}
                   />
                 </Link>
