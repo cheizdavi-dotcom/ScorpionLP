@@ -6,8 +6,8 @@ const Header = () => {
   const logo = PlaceHolderImages.find((img) => img.id === 'logo');
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-primary/30 bg-black/50 backdrop-blur-md">
-      <div className="mx-auto flex h-[100px] max-w-7xl items-center justify-between px-5">
+    <header className="sticky top-0 z-50 w-full border-b border-primary bg-black/50 backdrop-blur-md">
+      <div className="mx-auto flex h-[90px] max-w-7xl items-center justify-between px-5">
         <Link href="/">
           {logo ? (
             <Image
