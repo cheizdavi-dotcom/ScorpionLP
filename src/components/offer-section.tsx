@@ -19,7 +19,7 @@ const OfferSection = () => {
   return (
     <section className="relative w-full bg-black py-20 sm:py-28 overflow-hidden">
       {/* Central Glow */}
-      <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-2/3 max-w-4xl h-full bg-primary/10 rounded-full blur-[250px] pointer-events-none"></div>
+      <div className="absolute inset-x-0 top-1/4 h-1/2 w-full bg-[radial-gradient(ellipse_at_center,hsl(var(--primary)/0.15)_0%,transparent_50%)] blur-[120px] pointer-events-none"></div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-4">
@@ -36,9 +36,15 @@ const OfferSection = () => {
             <div className="bg-gradient-to-br from-red-500 to-red-600 p-6 text-center rounded-t-xl">
                 <h3 className="text-3xl font-black text-white">Landing Page</h3>
                 <div className="flex justify-center items-center gap-1 mt-2">
-                    {[...Array(5)].map((_, i) => (
+                    {[...Array(4)].map((_, i) => (
                         <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
                     ))}
+                    <div className="relative">
+                        <Star className="h-5 w-5 text-yellow-400/30 fill-yellow-400/30" />
+                        <div className="absolute top-0 left-0 overflow-hidden w-4/5">
+                            <Star className="h-5 w-5 text-yellow-400 fill-yellow-400" />
+                        </div>
+                    </div>
                 </div>
                 <p className="text-white/90 text-sm mt-1">4.8 (97 avaliações)</p>
             </div>
