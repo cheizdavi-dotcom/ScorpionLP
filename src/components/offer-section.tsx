@@ -40,7 +40,7 @@ const OfferSection = () => {
                         <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
                     ))}
                 </div>
-                <p className="text-white/90 text-sm mt-1">5.0 (97 avaliações)</p>
+                <p className="text-white/90 text-sm mt-1">4.8 (97 avaliações)</p>
             </div>
 
             {/* Card Body */}
