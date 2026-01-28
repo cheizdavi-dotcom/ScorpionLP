@@ -7,6 +7,7 @@ import AlertStrip from '@/components/alert-strip';
 import DesignPerformanceSection from '@/components/design-performance-section';
 import HowItWorksSection from '@/components/how-it-works-section';
 import EliteDesignSection from '@/components/elite-design-section';
+import OfferSection from '@/components/offer-section';
 
 export default function Home() {
   return (
@@ -61,11 +62,6 @@ export default function Home() {
 
       <TacticalVisionSection />
 
-      {/* Separator */}
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="my-12 h-[1px] w-full bg-primary/30"></div>
-      </div>
-
       <AlertStrip />
       
       <DesignPerformanceSection />
@@ -73,6 +69,8 @@ export default function Home() {
       <HowItWorksSection />
 
       <EliteDesignSection />
+
+      <OfferSection />
     </div>
   );
 }
