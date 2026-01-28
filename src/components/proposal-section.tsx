@@ -25,7 +25,7 @@ const ProposalSection = () => {
               ) : (
                 <div className="h-[500px] w-full rounded bg-gray-700" />
               )}
-              <div className="pointer-events-none absolute top-5 left-5 flex h-28 w-28 items-center justify-center rounded-full bg-primary text-center">
+              <div className="pointer-events-none absolute top-5 left-5 flex h-24 w-24 items-center justify-center rounded-full bg-primary text-center">
                 <p className="max-w-[90%] text-[10px] font-black uppercase leading-tight text-white">
                   Design Elite & Estratégia
                 </p>

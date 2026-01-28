@@ -44,38 +44,20 @@ const ProgressBars = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      const animationDuration = 2000; // 2 seconds
-      const updateFrequency = 1000 / 60; // ~60fps
-
-      const intervals = skills.map((skill, index) => {
-        let startValue = 0;
-        const endValue = skill.value;
-        const totalUpdates = animationDuration / updateFrequency;
-        const increment = endValue / totalUpdates;
-
-        const interval = setInterval(() => {
-          startValue += increment;
-          if (startValue >= endValue) {
-            setProgressValues(prev => {
-                const newValues = [...prev];
-                newValues[index] = endValue;
-                return newValues;
-            });
-            clearInterval(interval);
-          } else {
-            setProgressValues(prev => {
-                const newValues = [...prev];
-                newValues[index] = Math.ceil(startValue);
-                return newValues;
-            });
-          }
-        }, updateFrequency);
-
-        return interval;
-      });
+      // Set final values after a delay to trigger CSS transitions.
+      // Staggering the start of each bar's animation.
+      const timers = skills.map((skill, index) =>
+        setTimeout(() => {
+          setProgressValues(prev => {
+            const newValues = [...prev];
+            newValues[index] = skill.value;
+            return newValues;
+          });
+        }, 150 * index)
+      );
 
       return () => {
-        intervals.forEach(clearInterval);
+        timers.forEach(clearTimeout);
       };
     }
   }, [isIntersecting]);
