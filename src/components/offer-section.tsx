@@ -18,8 +18,8 @@ const features = [
 const OfferSection = () => {
   return (
     <section className="relative w-full bg-black py-20 sm:py-28 overflow-hidden">
-      {/* Central Glow */}
-      <div className="absolute inset-x-0 top-1/4 h-1/2 w-full bg-[radial-gradient(ellipse_at_center,hsl(var(--primary)/0.15)_0%,transparent_50%)] blur-[120px] pointer-events-none"></div>
+      {/* Subtle Red Glow from Bottom */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(255,0,0,0.15)_0%,transparent_60%)] blur-[120px] pointer-events-none"></div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-4">
