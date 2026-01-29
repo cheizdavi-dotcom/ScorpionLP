@@ -30,9 +30,11 @@ const Header = () => {
               <li><Link href="#valor" className="text-[17px] font-bold text-white transition-colors hover:text-primary">Valor</Link></li>
             </ul>
           </nav>
-          <button className="btn-contact hidden md:block">
-            CONTATO
-          </button>
+          <Link href="https://wa.me/5551989760454?text=Olá,%20venho%20do%20seu%20site%20e%20queria%20mais%20informações,%20por%20favor." target="_blank" rel="noopener noreferrer" className="hidden md:block">
+            <button className="btn-contact">
+              CONTATO
+            </button>
+          </Link>
           <button className="md:hidden">
              <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />

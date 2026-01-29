@@ -44,18 +44,18 @@ const Footer = () => {
                 <ul className="mt-4 space-y-3">
                   <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Central de Ajuda</Link></li>
                   <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">FAQ</Link></li>
-                  <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Contato</Link></li>
+                  <li><Link href="https://wa.me/5551989760454?text=Olá,%20venho%20do%20seu%20site%20e%20queria%20mais%20informações,%20por%20favor." target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground transition-colors hover:text-white">Contato</Link></li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="text-base font-bold uppercase tracking-wider text-primary">Empresa</h3>
                 <ul className="mt-4 space-y-3">
-                  <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Home</Link></li>
-                  <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Sobre Nós</Link></li>
-                  <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Valor</Link></li>
+                  <li><Link href="/" className="text-sm text-muted-foreground transition-colors hover:text-white">Home</Link></li>
+                  <li><Link href="#sobre-nos" className="text-sm text-muted-foreground transition-colors hover:text-white">Sobre Nós</Link></li>
+                  <li><Link href="#valor" className="text-sm text-muted-foreground transition-colors hover:text-white">Valor</Link></li>
                   <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Projetos</Link></li>
-                  <li><Link href="#" className="text-sm text-muted-foreground transition-colors hover:text-white">Contato</Link></li>
+                  <li><Link href="https://wa.me/5551989760454?text=Olá,%20venho%20do%20seu%20site%20e%20queria%20mais%20informações,%20por%20favor." target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground transition-colors hover:text-white">Contato</Link></li>
                 </ul>
               </div>
             </div>

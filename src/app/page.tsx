@@ -9,6 +9,7 @@ import HowItWorksSection from '@/components/how-it-works-section';
 import EliteDesignSection from '@/components/elite-design-section';
 import OfferSection from '@/components/offer-section';
 import Footer from '@/components/footer';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -32,9 +33,11 @@ export default function Home() {
               agora sua estrutura com design tático.
             </p>
 
-            <button className="btn-main">
-              QUERO MINHA ESTRUTURA TÁTICA
-            </button>
+            <Link href="https://wa.me/5551989760454?text=Olá,%20venho%20do%20seu%20site%20e%20queria%20mais%20informações,%20por%20favor." target="_blank" rel="noopener noreferrer">
+              <button className="btn-main">
+                QUERO MINHA ESTRUTURA TÁTICA
+              </button>
+            </Link>
           </div>
         </main>
         <div className="absolute inset-0 z-0 h-full w-full">

@@ -43,7 +43,7 @@ const ProposalSection = () => {
               <p className="mt-6 text-lg text-muted-foreground">
                 Um site cheio de informações nem sempre é o ideal para o lead, pois raramente ele lê tudo. Por isso, nossa proposta é um site que, a cada seção, capte a atenção do lead por meio de um design estratégico e envolvente.
               </p>
-              <Link href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="mt-8">
+              <Link href="https://wa.me/5551989760454?text=Olá,%20venho%20do%20seu%20site%20e%20queria%20mais%20informações,%20por%20favor." target="_blank" rel="noopener noreferrer" className="mt-8">
                 <button className="btn-contact">
                   Saber Mais
                 </button>

@@ -31,7 +31,7 @@ const TacticalVisionSection = () => {
                 Não criamos apenas páginas bonitas. Desenvolvemos ferramentas de vendas projetadas para conectar sua oferta ao cliente certo e maximizar suas conversões, sem desperdiçar tráfego.
               </p>
             </div>
-            <Link href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-8 self-start">
+            <Link href="https://wa.me/5551989760454?text=Olá,%20venho%20do%20seu%20site%20e%20queria%20mais%20informações,%20por%20favor." target="_blank" rel="noopener noreferrer" className="relative z-10 mt-8 self-start">
               <button className="btn-contact">
                 SABER MAIS
               </button>

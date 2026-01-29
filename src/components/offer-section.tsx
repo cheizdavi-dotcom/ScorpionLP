@@ -71,7 +71,7 @@ const OfferSection = () => {
                   ))}
                 </ul>
             
-                <Link href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="mt-10 block">
+                <Link href="https://wa.me/5551989760454?text=Olá,%20venho%20do%20seu%20site%20e%20queria%20mais%20informações,%20por%20favor." target="_blank" rel="noopener noreferrer" className="mt-10 block">
                      <button className="btn-offer w-full">
                         QUERO UMA!
                      </button>
