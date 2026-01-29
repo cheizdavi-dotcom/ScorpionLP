@@ -1,3 +1,4 @@
+
 import { Star, CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -19,7 +20,7 @@ const OfferSection = () => {
   return (
     <section className="relative w-full bg-black py-20 sm:py-28 overflow-hidden">
       {/* Subtle Red Glow from Bottom */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(255,0,0,0.15)_0%,transparent_60%)] blur-[120px] pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(255,0,0,0.15)_0%,transparent_60%)] pointer-events-none"></div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-4">
@@ -71,7 +72,7 @@ const OfferSection = () => {
                   ))}
                 </ul>
             
-                <Link href="https://wa.me/5551989760454?text=Olá,%20venho%20do%20seu%20site%20e%20queria%20mais%20informações,%20por%20favor." target="_blank" rel="noopener noreferrer" className="mt-10 block">
+                <Link href="https://wa.me/5551989760454?text=Olá!%20Vi%20os%20detalhes%20da%20Estrutura%20ScorpionLP%20no%20site%20e%20decidi%20que%20é%20o%20momento%20de%20profissionalizar%20meu%20negócio.%20Quero%20garantir%20minha%20página%20com%20o%20valor%20de%20investimento%20que%20vi%20no%20site!" target="_blank" rel="noopener noreferrer" className="mt-10 block">
                      <button className="btn-offer w-full">
                         QUERO UMA!
                      </button>
