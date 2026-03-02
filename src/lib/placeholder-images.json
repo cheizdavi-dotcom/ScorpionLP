@@ -53,6 +53,12 @@
       "description": "Mockup of Comando Financeiro project on a MacBook",
       "imageUrl": "https://i.imgur.com/yxSRaZS.png",
       "imageHint": "dashboard macbook"
+    },
+    {
+      "id": "padu-studios-mockup",
+      "description": "Mockup of Padu Studios project",
+      "imageUrl": "https://i.imgur.com/3FZgIcV.png",
+      "imageHint": "music studio website"
     }
   ]
 }

@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
@@ -65,7 +66,10 @@ const EliteDesignSection = () => {
             )}
             <h2 className="text-2xl font-black text-white uppercase leading-tight">PADU STUDIOS: EXPERIÊNCIA E CONVERSÃO MUSICAL.</h2>
             <p className="mt-6 text-base text-muted-foreground max-w-lg">
-              Desenvolvemos a nova presença digital para o Padu Studios, um dos pontos de referência na Teodoro Sampaio. O desafio foi migrar uma estrutura antiga para uma arquitetura moderna no Firebase, focada em transformar visitantes em agendamentos reais via WhatsApp. Implementamos um design minimalista de alto contraste, separando as ofertas de Ensaio e Gravação para facilitar a tomada de decisão do cliente.
+              Desenvolvemos a nova presença digital para o Padu Studios, um dos pontos de referência na Teodoro Sampaio. O desafio foi migrar uma estrutura antiga para uma arquitetura moderna no Firebase, focada em transformar visitantes em agendamentos reais via WhatsApp.
+            </p>
+            <p className="mt-4 text-base text-muted-foreground max-w-lg">
+              Implementamos um design minimalista de alto contraste, separando as ofertas de Ensaio e Gravação para facilitar a tomada de decisão do cliente. Com uma interface otimizada para mobile e carregamento ultrarrápido, o projeto foca 100% em clareza técnica e agilidade no fechamento de horários.
             </p>
             <Link href="https://wa.me/5551989760454?text=Olá,%20vi%20o%20projeto%20do%20Padu%20Studios%20e%20queria%20uma%20estrutura%20parecida!" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block">
               <button className="btn-contact">
