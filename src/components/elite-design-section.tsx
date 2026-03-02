@@ -66,7 +66,7 @@ const EliteDesignSection = () => {
             <p className="mt-6 text-base text-muted-foreground max-w-lg">
               Desenvolvemos a presença digital do Padu Studios, migrando uma estrutura antiga para uma arquitetura moderna no Firebase. O foco foi otimizar a conversão de agendamentos via WhatsApp, unindo um design minimalista de alto contraste com performance mobile extrema.
             </p>
-            <Link href="https://wa.me/5551989760454?text=Olá,%20vi%20o%20projeto%20do%20Padu%20Studios%20e%20queria%20uma%20estrutura%20parecida!" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block">
+            <Link href="https://padustudios.com.br/" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block">
               <button className="btn-contact">
                 CONHECER ESTRUTURA AO VIVO
               </button>
