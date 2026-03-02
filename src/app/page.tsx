@@ -9,7 +9,6 @@ import HowItWorksSection from '@/components/how-it-works-section';
 import EliteDesignSection from '@/components/elite-design-section';
 import OfferSection from '@/components/offer-section';
 import FAQSection from '@/components/faq-section';
-import AIHeadlineTester from '@/components/ai-headline-tester';
 import Footer from '@/components/footer';
 import Link from 'next/link';
 
@@ -69,8 +68,6 @@ export default function Home() {
       </div>
 
       <TacticalVisionSection />
-
-      <AIHeadlineTester />
 
       <AlertStrip />
       

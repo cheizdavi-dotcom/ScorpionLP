@@ -7,24 +7,24 @@ import {
 
 const faqs = [
   {
-    question: "QUAL O PRAZO DE ENTREGA DA ESTRUTURA?",
-    answer: "Trabalhamos com agilidade extrema. Após o envio de todas as informações, entregamos sua landing page pronta para rodar tráfego em até 7 dias úteis."
+    question: "QUAL O PRAZO DE ENTREGA DO SITE?",
+    answer: "Trabalhamos com agilidade para colocar seu negócio no ar. Após o envio de todas as informações necessárias, entregamos seu projeto pronto em até 7 dias úteis."
   },
   {
-    question: "EU PRECISO PAGAR MENSALIDADE?",
-    answer: "Não. A estrutura é sua. Diferente de plataformas de assinatura, aqui você paga apenas uma vez pelo desenvolvimento e a página é sua para sempre."
+    question: "HÁ CUSTO DE MENSALIDADE?",
+    answer: "Não. O site é seu. Diferente de plataformas de assinatura, aqui você faz um investimento único pelo desenvolvimento e a página é sua permanentemente."
   },
   {
-    question: "O SITE É RESPONSIVO PARA CELULAR?",
-    answer: "Sim. Mais de 80% do tráfego hoje vem do mobile. Sua página será otimizada para carregar instantaneamente e ter uma conversão impecável em qualquer smartphone."
+    question: "O SITE FUNCIONA BEM NO CELULAR?",
+    answer: "Sim. Hoje a grande maioria do tráfego vem de dispositivos móveis. Seu site é totalmente otimizado para carregar rápido e funcionar perfeitamente em qualquer smartphone."
   },
   {
-    question: "VOCÊS FAZEM O DESIGN E A COPY?",
-    answer: "Sim. Nossa proposta é entregar a solução completa. Nós desenvolvemos o design estratégico e a estrutura de copy focada em vendas."
+    question: "O SERVIÇO INCLUI O DESIGN E OS TEXTOS?",
+    answer: "Sim. Entregamos a solução completa. Desenvolvemos tanto o visual moderno quanto a escrita focada em guiar o cliente para o fechamento."
   },
   {
-    question: "COMO FUNCIONA O SUPORTE PÓS-ENTREGA?",
-    answer: "Damos total suporte para a configuração do seu domínio e garantimos que tudo esteja funcionando 100%. Além disso, oferecemos 2 rodadas de alterações gratuitas após a entrega."
+    question: "COMO FUNCIONA O SUPORTE APÓS A ENTREGA?",
+    answer: "Damos suporte total para a configuração do seu domínio e garantimos que tudo esteja funcionando corretamente. Oferecemos também um período para ajustes finais após a entrega."
   }
 ];
 
@@ -35,7 +35,7 @@ const FAQSection = () => {
         <div className="text-center mb-16">
           <p className="text-sm font-bold uppercase tracking-widest text-primary">DÚVIDAS FREQUENTES</p>
           <h2 className="mt-3 text-4xl font-black text-white uppercase sm:text-5xl">
-            PERGUNTAS <span className="text-primary">TÁTICAS</span>
+            PERGUNTAS <span className="text-primary">COMUNS</span>
           </h2>
         </div>
 
