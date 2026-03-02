@@ -68,7 +68,7 @@ const EliteDesignSection = () => {
             </p>
             <Link href="https://wa.me/5551989760454?text=Olá,%20vi%20o%20projeto%20do%20Padu%20Studios%20e%20queria%20uma%20estrutura%20parecida!" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block">
               <button className="btn-contact">
-                SOLICITAR ESTRUTURA SIMILAR
+                CONHECER ESTRUTURA AO VIVO
               </button>
             </Link>
           </div>
