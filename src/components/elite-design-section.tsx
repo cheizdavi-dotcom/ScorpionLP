@@ -28,13 +28,12 @@ const EliteDesignSection = () => {
           {/* Left Column: Case Real (Comando Financeiro) */}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             {mainProjectImage && (
-              <div className="relative w-full mb-8">
+              <div className="relative w-full aspect-video mb-8">
                  <Image
                   src={mainProjectImage.imageUrl}
                   alt={mainProjectImage.description}
-                  width={600}
-                  height={400}
-                  className="w-full h-auto drop-shadow-[0_20px_40px_rgba(255,0,0,0.25)]"
+                  fill
+                  className="object-contain drop-shadow-[0_20px_40px_rgba(255,0,0,0.25)]"
                   data-ai-hint={mainProjectImage.imageHint}
                 />
               </div>
@@ -53,13 +52,12 @@ const EliteDesignSection = () => {
           {/* Right Column: Case Real (Padu Studios) */}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             {paduProjectImage && (
-              <div className="relative w-full mb-8">
+              <div className="relative w-full aspect-video mb-8">
                  <Image
                   src={paduProjectImage.imageUrl}
                   alt={paduProjectImage.description}
-                  width={600}
-                  height={400}
-                  className="w-full h-auto drop-shadow-[0_20px_40px_rgba(255,0,0,0.25)]"
+                  fill
+                  className="object-contain drop-shadow-[0_20px_40px_rgba(255,0,0,0.25)]"
                   data-ai-hint={paduProjectImage.imageHint}
                 />
               </div>
