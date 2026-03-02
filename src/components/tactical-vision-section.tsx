@@ -25,7 +25,7 @@ const TacticalVisionSection = () => {
                 NOSSOS VALORES
               </p>
               <h2 className="mt-4 font-black text-3xl uppercase text-white sm:text-4xl">
-                Estruturas que Vendem. Design que Domina. A Sua Marca em Outro Nível.
+                Sites que Vendem. Design que Domina. Sua Marca em Outro Nível.
               </h2>
               <p className="mt-6 text-lg text-white/80">
                 Não criamos apenas páginas bonitas. Desenvolvemos ferramentas de vendas projetadas para conectar sua oferta ao cliente certo e maximizar suas conversões, sem desperdiçar tráfego.
@@ -48,7 +48,7 @@ const TacticalVisionSection = () => {
                   NOSSA VISÃO
                 </p>
                 <h3 className="mt-2 text-2xl font-black uppercase">
-                  Ser a Referência Absoluta em Estruturas de Alta Conversão.
+                  Ser a Referência Absoluta em Sites de Alta Conversão.
                 </h3>
                 <p className="mt-4 text-base text-white/90">
                   Nossa visão é que cada cliente nosso deixe de competir por atenção e passe a dominar o seu nicho com um posicionamento digital inquestionável.
@@ -67,7 +67,7 @@ const TacticalVisionSection = () => {
                   Transformar Visualizações em Lucro Real.
                 </h3>
                 <p className="mt-4 text-base text-white/90">
-                  Nossa missão é eliminar o amadorismo. Entregamos estruturas que funcionam, convertem e colocam dinheiro no seu bolso, focando 100% no resultado do seu negócio.
+                  Nossa missão é eliminar o amadorismo. Entregamos projetos que funcionam, convertem e colocam dinheiro no seu bolso, focando 100% no resultado do seu negócio.
                 </p>
               </div>
             </div>

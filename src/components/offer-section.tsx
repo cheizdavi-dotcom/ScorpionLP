@@ -1,4 +1,3 @@
-
 import { Star, CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -6,14 +5,14 @@ const features = [
   'Logotipo feita do zero',
   'Banners profissionais',
   'Design Personalizado',
-  'Estrutura Responsiva',
+  'Site Responsivo',
   'SEO Básico',
   'Conteúdo Visual',
   'Configuração de Domínio',
   'Garantia de Desempenho',
   '2 Rodadas completas de alterações',
   'Formulário de Captura de Leads (opcional)',
-  'Estrutura 100% Personalizada',
+  'Projeto 100% Personalizado',
 ];
 
 const OfferSection = () => {

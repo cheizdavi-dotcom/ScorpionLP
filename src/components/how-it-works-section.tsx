@@ -22,7 +22,7 @@ const steps = [
   {
     icon: <Rocket className="h-8 w-8 text-white" />,
     title: 'Check Final',
-    description: 'Momento onde vamos finalizar a sua estrutura com foco total em colocar o site no ar.',
+    description: 'Momento onde vamos finalizar o seu site com foco total em colocar o projeto no ar.',
     step: 'Passo 04',
   },
 ];

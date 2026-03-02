@@ -25,18 +25,18 @@ export default function Home() {
 
             <h1 className="font-black text-6xl uppercase text-foreground md:text-7xl">
               DESIGN QUE IMPÕE.{' '}
-              <span className="text-primary">ESTRUTURA QUE VENDE.</span>
+              <span className="text-primary">PROJETOS QUE VENDEM.</span>
             </h1>
 
             <p className="max-w-[700px] text-lg font-normal text-muted-foreground md:text-xl">
-              Sua marca merece uma landing page de alto padrão que converte tráfego em
+              Sua marca merece um site de alto padrão que converte tráfego em
               lucro real. Pare de perder dinheiro com páginas amadoras e adquira
-              agora sua estrutura com design tático.
+              agora seu projeto de elite.
             </p>
 
             <Link href="https://wa.me/5551989760454?text=Olá,%20venho%20do%20seu%20site%20e%20queria%20mais%20informações,%20por%20favor." target="_blank" rel="noopener noreferrer">
               <button className="btn-main">
-                QUERO MINHA ESTRUTURA TÁTICA
+                QUERO MEU SITE PROFISSIONAL
               </button>
             </Link>
           </div>
