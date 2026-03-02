@@ -6,7 +6,7 @@ const AlertStrip = () => {
           O MERCADO NÃO PERDOA AMADORISMO.
         </h2>
         <p className="mt-4 max-w-4xl mx-auto text-base text-white/90 md:text-lg">
-          Enquanto você lê isso, seu concorrente com uma estrutura melhor está capturando o lead que deveria ser seu. Uma landing page de elite não é um custo; é o fim do desperdício do seu tráfego pago.
+          Enquanto você lê isso, seu concorrente com uma página melhor está capturando o lead que deveria ser seu. Um site de elite não é um custo; é o fim do desperdício do seu tráfego pago.
         </p>
       </div>
     </section>

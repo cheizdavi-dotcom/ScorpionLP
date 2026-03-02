@@ -71,7 +71,7 @@ const OfferSection = () => {
                   ))}
                 </ul>
             
-                <Link href="https://wa.me/5551989760454?text=Olá!%20Vi%20os%20detalhes%20da%20Estrutura%20ScorpionLP%20no%20site%20e%20decidi%20que%20é%20o%20momento%20de%20profissionalizar%20meu%20negócio.%20Quero%20garantir%20minha%20página%20com%20o%20valor%20de%20investimento%20que%20vi%20no%20site!" target="_blank" rel="noopener noreferrer" className="mt-10 block">
+                <Link href="https://wa.me/5551989760454?text=Olá!%20Vi%20os%20detalhes%20do%20projeto%20ScorpionLP%20no%20site%20e%20decidi%20que%20é%20o%20momento%20de%20profissionalizar%20meu%20negócio.%20Quero%20garantir%20minha%20página%20com%20o%20valor%20de%20investimento%20que%20vi%20no%20site!" target="_blank" rel="noopener noreferrer" className="mt-10 block">
                      <button className="btn-offer w-full">
                         QUERO UMA!
                      </button>

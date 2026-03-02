@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
@@ -38,9 +37,9 @@ const EliteDesignSection = () => {
                 />
               </div>
             )}
-            <h2 className="text-2xl font-black text-white uppercase leading-tight">COMANDO FINANCEIRO: ESTRUTURA DE VENDAS E UX.</h2>
+            <h2 className="text-2xl font-black text-white uppercase leading-tight">COMANDO FINANCEIRO: DESIGN DE ALTA CONVERSÃO.</h2>
             <p className="mt-6 text-base text-muted-foreground max-w-lg">
-              Desenvolvemos a landing page oficial para esta ferramenta de gestão avançada. O desafio foi traduzir uma solução técnica complexa em uma experiência de venda fluida, unindo design de alto padrão e uma arquitetura focada 100% em conversão.
+              Desenvolvemos o novo site oficial para esta ferramenta de gestão avançada. O desafio foi traduzir uma solução técnica complexa em uma experiência de venda fluida, unindo design de alto padrão e foco total em resultados.
             </p>
             <Link href="https://fimdocaosfinanceiro.netlify.app/" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block">
               <button className="btn-contact">
@@ -62,9 +61,9 @@ const EliteDesignSection = () => {
                 />
               </div>
             )}
-            <h2 className="text-2xl font-black text-white uppercase leading-tight">PADU STUDIOS: EXPERIÊNCIA E CONVERSÃO MUSICAL.</h2>
+            <h2 className="text-2xl font-black text-white uppercase leading-tight">PADU STUDIOS: DESIGN DE ELITE E PERFORMANCE.</h2>
             <p className="mt-6 text-base text-muted-foreground max-w-lg">
-              Desenvolvemos a presença digital do Padu Studios, migrando uma estrutura antiga para uma arquitetura moderna no Firebase. O foco foi otimizar a conversão de agendamentos via WhatsApp, unindo um design minimalista de alto contraste com performance mobile extrema.
+              Desenvolvemos a nova presença digital para o Padu Studios. O desafio foi migrar uma estrutura antiga para uma arquitetura moderna no Firebase, focada em transformar visitantes em agendamentos reais via WhatsApp.
             </p>
             <Link href="https://padustudios.com.br/" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block">
               <button className="btn-contact">

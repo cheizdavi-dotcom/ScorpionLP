@@ -48,7 +48,7 @@ const TacticalVisionSection = () => {
                   NOSSA VISÃO
                 </p>
                 <h3 className="mt-2 text-2xl font-black uppercase">
-                  Ser a Referência Absoluta em Sites de Alta Conversão.
+                  Ser a Referência Absoluta em Projetos de Alta Conversão.
                 </h3>
                 <p className="mt-4 text-base text-white/90">
                   Nossa visão é que cada cliente nosso deixe de competir por atenção e passe a dominar o seu nicho com um posicionamento digital inquestionável.
@@ -67,7 +67,7 @@ const TacticalVisionSection = () => {
                   Transformar Visualizações em Lucro Real.
                 </h3>
                 <p className="mt-4 text-base text-white/90">
-                  Nossa missão é eliminar o amadorismo. Entregamos projetos que funcionam, convertem e colocam dinheiro no seu bolso, focando 100% no resultado do seu negócio.
+                  Nossa missão é eliminar o amadorismo. Entregamos projetos que funcionam, convertem e valorizam o seu negócio, focando 100% no seu resultado.
                 </p>
               </div>
             </div>

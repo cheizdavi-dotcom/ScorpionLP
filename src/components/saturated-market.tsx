@@ -4,23 +4,23 @@ const features = [
   {
     number: '01',
     icon: <BrainCircuit className="h-10 w-10 text-primary" />,
-    title: 'Design Tático e Psicológico',
+    title: 'Design Profissional e Estratégico',
     description:
-      'Cada elemento é posicionado com base em neuromarketing para guiar o olhar do usuário e maximizar a conversão. Não é apenas beleza, é ciência.',
+      'Cada elemento é posicionado estrategicamente para guiar o olhar do usuário e maximizar a conversão. Não é apenas beleza, é ciência aplicada.',
   },
   {
     number: '02',
     icon: <Telescope className="h-10 w-10 text-primary" />,
-    title: 'Estrutura Voltada à Venda',
+    title: 'Foco Total em Vendas',
     description:
-      'Nossas landing pages são construídas com uma narrativa que educa, envolve e convence. A venda se torna uma consequência natural da experiência.',
+      'Nossas páginas são construídas com uma narrativa que educa, envolve e convence seu cliente do início ao fim.',
   },
   {
     number: '03',
     icon: <Target className="h-10 w-10 text-primary" />,
-    title: 'Foco em Performance Extrema',
+    title: 'Performance de Alto Nível',
     description:
-      'Código limpo e otimizado para um carregamento quase instantâneo. Em um mercado competitivo, cada milissegundo conta para não perder um lead.',
+      'Código limpo e otimizado para um carregamento quase instantâneo. Em um mercado competitivo, a velocidade é essencial para não perder clientes.',
   },
 ];
 
