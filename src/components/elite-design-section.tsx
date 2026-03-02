@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 const EliteDesignSection = () => {
   const mainProjectImage = PlaceHolderImages.find(img => img.id === 'comando-financeiro-mockup');
+  const paduProjectImage = PlaceHolderImages.find(img => img.id === 'padu-studios-mockup');
 
   return (
     <section className="relative w-full bg-black py-20 sm:py-28 overflow-hidden">
@@ -21,23 +22,23 @@ const EliteDesignSection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-20 items-start">
         
-          {/* Left Column: Case Real */}
+          {/* Left Column: Case Real (Comando Financeiro) */}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             {mainProjectImage && (
               <div className="relative w-full mb-8">
                  <Image
                   src={mainProjectImage.imageUrl}
                   alt={mainProjectImage.description}
-                  width={500}
-                  height={325}
+                  width={600}
+                  height={400}
                   className="w-full h-auto drop-shadow-[0_20px_40px_rgba(255,0,0,0.25)]"
                   data-ai-hint={mainProjectImage.imageHint}
                 />
               </div>
             )}
-            <h2 className="text-3xl font-black text-white uppercase">COMANDO FINANCEIRO: ESTRUTURA DE VENDAS E UX.</h2>
+            <h2 className="text-2xl font-black text-white uppercase leading-tight">COMANDO FINANCEIRO: ESTRUTURA DE VENDAS E UX.</h2>
             <p className="mt-6 text-base text-muted-foreground max-w-lg">
               Desenvolvemos a landing page oficial para esta ferramenta de gestão avançada. O desafio foi traduzir uma solução técnica complexa em uma experiência de venda fluida, unindo design de alto padrão e uma arquitetura focada 100% em conversão.
             </p>
@@ -48,16 +49,29 @@ const EliteDesignSection = () => {
             </Link>
           </div>
 
-          {/* Right Column: Slot de Reserva */}
-          <div className="flex items-center justify-center h-full min-h-[400px] w-full p-8 bg-black/30 border-2 border-dashed border-primary/50 rounded-2xl backdrop-blur-sm">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-white uppercase tracking-wider">
-                PROJETO EM DESENVOLVIMENTO
-              </h3>
-              <p className="mt-4 text-base text-muted-foreground max-w-xs mx-auto">
-                Estamos criando uma estrutura de elite para o nosso próximo cliente. Esta vaga pode ser sua.
-              </p>
-            </div>
+          {/* Right Column: Case Real (Padu Studios) */}
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+            {paduProjectImage && (
+              <div className="relative w-full mb-8">
+                 <Image
+                  src={paduProjectImage.imageUrl}
+                  alt={paduProjectImage.description}
+                  width={600}
+                  height={400}
+                  className="w-full h-auto drop-shadow-[0_20px_40px_rgba(255,0,0,0.25)]"
+                  data-ai-hint={paduProjectImage.imageHint}
+                />
+              </div>
+            )}
+            <h2 className="text-2xl font-black text-white uppercase leading-tight">PADU STUDIOS: EXPERIÊNCIA E CONVERSÃO MUSICAL.</h2>
+            <p className="mt-6 text-base text-muted-foreground max-w-lg">
+              Desenvolvemos a nova presença digital para o Padu Studios, um dos pontos de referência na Teodoro Sampaio. O desafio foi migrar uma estrutura antiga para uma arquitetura moderna no Firebase, focada em transformar visitantes em agendamentos reais via WhatsApp. Implementamos um design minimalista de alto contraste, separando as ofertas de Ensaio e Gravação para facilitar a tomada de decisão do cliente.
+            </p>
+            <Link href="https://wa.me/5551989760454?text=Olá,%20vi%20o%20projeto%20do%20Padu%20Studios%20e%20queria%20uma%20estrutura%20parecida!" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block">
+              <button className="btn-contact">
+                SOLICITAR ESTRUTURA SIMILAR
+              </button>
+            </Link>
           </div>
 
         </div>
